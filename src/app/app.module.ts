@@ -6,11 +6,15 @@ import { ClientsService } from './clients.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClientComponent } from './client/client.component';
+import { ClientDetalsComponent } from './client-detals/client-detals.component';
+import { ThanksComponent } from './thanks/thanks.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClientComponent
+    ClientComponent,
+    ClientDetalsComponent,
+    ThanksComponent
   ],
   imports: [
     BrowserModule,

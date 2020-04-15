@@ -7,19 +7,17 @@ export class ClientsService {
 
   constructor() { }
   clients:Client[]=[
-    new Client(1,"example@gmail.com","test1","test2","077-878-835", "10/10/1991"),
+    new Client("","","","", "10/10/1991"),
   ]
 }
 
 class Client{
-  id:number
   email:string
   name:string
   surname:string
   mobile:string
   date:string
-  constructor(a:number,b:string,c:string,d:string,e:string,f:string){
-    this.id=a
+  constructor(b:string,c:string,d:string,e:string,f:string){
     this.email=b
     this.name=c
     this.surname=d
