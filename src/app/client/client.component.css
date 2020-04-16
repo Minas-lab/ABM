@@ -1,4 +1,4 @@
-#menu {
+.menu {
     min-height: 50px;
     width: 100%;
     background: black;
@@ -8,4 +8,23 @@
 
 #container {
     margin-top: 50px;
+    display: flex;
+}
+
+.leftSide {
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+}
+
+.main {
+    margin-left: 50%
+}
+
+.pic {
+    height: 100%;
+    width: 100%
 }

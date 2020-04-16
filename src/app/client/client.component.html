@@ -1,75 +1,96 @@
-<div id="menu">
+<div class="menu">
 
 </div>
-<div class="container" id="container">
-    <h1 class=" text-center">MLZ</h1>
-    <div class="form-group">
-        <p>Hello! Before we get training I would like to get an overview of your lifestyle & training goals/history to help me make your session/(s) as personalised and beneficial as possible.Thank you for taking the time to fill out.</p>
-        <p> MLZ xx</p>
+<div id="container">
+
+    <div class="leftSide">
+        <img src="../assets/pic.jpg" class="pic">
     </div>
-    <h2 class="text-center">CLIENT DETAILS</h2>
-    <div class="form-group">
-        <label for="mail">Emali</label>
-        <input type="email" id="mail" class="form-control" [(ngModel)]="clients[0].email" required>
+    <div class="main">
+        <h1 class=" text-center">MLZ</h1>
+        <div class="form-group">
+            <p>Hello! Before we get training I would like to get an overview of your lifestyle & training goals/history to help me make your session/(s) as personalised and beneficial as possible.Thank you for taking the time to fill out.</p>
+            <p> MLZ xx</p>
+        </div>
+        <h2 class="text-center">CLIENT DETAILS</h2>
+        <div class="form-group">
+            <label for="mail">Emali</label>
+            <input type="email" id="mail" class="form-control" [(ngModel)]="clients[0].email" required>
+        </div>
+        <div class="form-group">
+            <label for="name">First Name*</label>
+            <input type="text" id="name" class="form-control" [(ngModel)]="clients[0].name" required>
+        </div>
+        <div class="form-group">
+            <label for="surname">Last Name*</label>
+            <input type="text" id="surname" class="form-control" [(ngModel)]="clients[0].surname" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile*</label>
+            <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" [(ngModel)]="clients[0].mobile" id="mobile" required>
+            <small>Format: 123-456-789</small>
+        </div>
+        <div class="form-group">
+            <label for="date">Date*</label>
+            <input type="date" id="date" class="form-control" [(ngModel)]="clients[0].mobile" required>
+        </div>
+        <div class="form-group">
+            <p>What are you looking to specifically improve in with regards to your training, healt and welldeing?*</p>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Fat Loss">
+            <label for="vehicle1"> Fat Loss</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Muscle Gain">
+            <label for="vehicle2"> Muscle Gain</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Rehab/Prehab ">
+            <label for="vehicle3"> Rehab/Prehab</label><br>
+            <input type="checkbox" id="vehicle4" name="vehicle4" value="Improve Strength ">
+            <label for="vehicle4"> Improve Strength</label><br>
+            <input type="checkbox" id="vehicle5" name="vehicle5" value="Sports Specific ">
+            <label for="vehicle5">Sports Specific</label><br>
+            <input type="checkbox" id="vehicle6" name="vehicle6" value="Learn a New Skill ">
+            <label for="vehicle6">Learn a New Skill</label><br>
+            <input type="checkbox" id="vehicle7" name="vehicle7" value="Improve Flexibility/Mobility ">
+            <label for="vehicle7">Improve Flexibility/Mobility</label><br>
+            <input type="checkbox" id="vehicle8" name="vehicle8" value="Cardiovascular endurance ">
+            <label for="vehicle8">Cardiovascular endurance</label><br>
+        </div>
+        <div class="form-group">
+            <label for="text1">Please provide detail*</label>
+            <textarea id="text1" rows="4" cols="50" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <p>How would you like to monitor your progres? *</p>
+            <input type="checkbox" id="vehicle9" name="vehicle9" value="Before & After Pics">
+            <label for="vehicle9"> Before & After Pics</label><br>
+            <input type="checkbox" id="vehicle10" name="vehicle10" value="Weight">
+            <label for="vehicle10"> Weight</label><br>
+            <input type="checkbox" id="vehicle11" name="vehicle11" value="Body Fat%(Callipers) ">
+            <label for="vehicle11"> Body Fat%(Callipers)</label><br>
+            <input type="checkbox" id="vehicle12" name="vehicle12" value="Tape Measurements">
+            <label for="vehicle12"> Tape Measurements</label><br>
+            <input type="checkbox" id="vehicle13" name="vehicle13" value="Performance ">
+            <label for="vehicle13">Performance</label><br>
+            <input type="checkbox" id="vehicle14" name="vehicle14" value="Assessments ">
+            <label for="vehicle14">Assessments</label><br>
+        </div>
+        <div class="form-group">
+            <label for="text2">Why would you like to achieve this goal? *</label>
+            <textarea id="text2" rows="4" cols="50" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="vehicle15" name="vehicle15" value="1-4 Weeks">
+            <label for="vehicle15"> 1-4 Weeks</label><br>
+            <input type="checkbox" id="vehicle16" name="vehicle16" value="4-8 Weeks ">
+            <label for="vehicle16">4-8 Weeks</label><br>
+            <input type="checkbox" id="vehicle17" name="vehicle17" value="12 Weeks Onwards ">
+            <label for="vehicle17">12 Weeks Onwards</label><br>
+        </div>
+        <div class="form-group">
+            <p>How committed are you?</p>
+            <label for="radio1">1</label>
+            <input type="radio" id="radio1" name="radio1" value="1">
+            <!-- <textarea id="text2" rows="4" cols="50" class="form-control"></textarea> -->
+        </div>
+        <button type="submit" class="btn btn-secondary btn-lg btn-block"><a routerLink="/client-detals" >SUMBIT</a></button>
     </div>
-    <div class="form-group">
-        <label for="name">First Name*</label>
-        <input type="text" id="name" class="form-control" [(ngModel)]="clients[0].name" required>
-    </div>
-    <div class="form-group">
-        <label for="surname">Last Name*</label>
-        <input type="text" id="surname" class="form-control" [(ngModel)]="clients[0].surname" required>
-    </div>
-    <div class="form-group">
-        <label for="mobile">Mobile*</label>
-        <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" [(ngModel)]="clients[0].mobile" id="mobile" required>
-        <small>Format: 123-456-789</small>
-    </div>
-    <div class="form-group">
-        <label for="date">Date*</label>
-        <input type="date" id="date" class="form-control" [(ngModel)]="clients[0].mobile" required>
-    </div>
-    <div class="form-group">
-        <p>What are you looking to specifically improve in with regards to your training, healt and welldeing?*</p>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Fat Loss">
-        <label for="vehicle1"> Fat Loss</label><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Muscle Gain">
-        <label for="vehicle2"> Muscle Gain</label><br>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Rehab/Prehab ">
-        <label for="vehicle3"> Rehab/Prehab</label><br>
-        <input type="checkbox" id="vehicle4" name="vehicle4" value="Improve Strength ">
-        <label for="vehicle4"> Improve Strength</label><br>
-        <input type="checkbox" id="vehicle5" name="vehicle5" value="Sports Specific ">
-        <label for="vehicle5">Sports Specific</label><br>
-        <input type="checkbox" id="vehicle6" name="vehicle6" value="Learn a New Skill ">
-        <label for="vehicle6">Learn a New Skill</label><br>
-        <input type="checkbox" id="vehicle7" name="vehicle7" value="Improve Flexibility/Mobility ">
-        <label for="vehicle7">Improve Flexibility/Mobility</label><br>
-        <input type="checkbox" id="vehicle8" name="vehicle8" value="Cardiovascular endurance ">
-        <label for="vehicle8">Cardiovascular endurance</label><br>
-    </div>
-    <div class="form-group">
-        <label for="text1">Please provide detail*</label>
-        <textarea id="text1" rows="4" cols="50" class="form-control"></textarea>
-    </div>
-    <div class="form-group">
-        <p>How would you like to monitor your progres? *</p>
-        <input type="checkbox" id="vehicle9" name="vehicle9" value="Before & After Pics">
-        <label for="vehicle9"> Before & After Pics</label><br>
-        <input type="checkbox" id="vehicle10" name="vehicle10" value="Weight">
-        <label for="vehicle10"> Weight</label><br>
-        <input type="checkbox" id="vehicle11" name="vehicle11" value="Body Fat%(Callipers) ">
-        <label for="vehicle11"> Body Fat%(Callipers)</label><br>
-        <input type="checkbox" id="vehicle12" name="vehicle12" value="Tape Measurements">
-        <label for="vehicle12"> Tape Measurements</label><br>
-        <input type="checkbox" id="vehicle13" name="vehicle13" value="Performance ">
-        <label for="vehicle13">Performance</label><br>
-        <input type="checkbox" id="vehicle14" name="vehicle14" value="Assessments ">
-        <label for="vehicle14">Assessments</label><br>
-    </div>
-    <div class="form-group">
-        <label for="text2">Why would you like to achieve this goal? *</label>
-        <textarea id="text2" rows="4" cols="50" class="form-control"></textarea>
-    </div>
-    <button type="submit" class="btn btn-secondary btn-lg btn-block"><a routerLink="/client-detals" >SUMBIT</a></button>
+
 </div>
